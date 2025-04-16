@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Price Table</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Sono:wght@400;700&display=swap" rel="stylesheet"/>
+    </head>
+    <style>
+        body{
+            font-family: "sono", sans-serif;
+        }
+        .price-contianer{
+            display: flex;
+            justify-content: center;
+            height: 100vh;
+            align-items: center;
+            gap: 2rem;
+            
+        }
+        .price-plan{
+            flex: 1;
+            background-color: #f2f2f2;
+            text-align: center;
+            max-width: 400px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .price-title{
+            font-weight: bold;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .price{
+            font-weight: bold;
+            margin-bottom: 10px;
+            font-size: 48px;
+        }
+        .list{
+            list-style: none;
+            margin: 0%;
+            padding: 0%;
+        }
+        .list li{
+            margin-bottom: 10px;
+        }
+        .button{
+            background-color: #ff6600;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+        @media (max-width: 1000px){
+            .price-contianer{
+                flex-direction: column;
+                height: 100%;
+            }
+        }
+    </style>
+    <body>
+        <div class="price-contianer">
+            <div class="price-plan">
+                <div class="price-title">Basic</div>
+                <div class="price">$11.99/month</div>
+                <ul class="list">
+                    <li>✅ 10GB Storage</li>
+                    <li>✅ 1 User</li>
+                    <li>🚫 Support</li>
+                </ul>
+                <button class="button">Sign Up</button>
+            </div>
+        
+            <div class="price-plan">
+                <div class="price-title">Standard</div>
+                <div class="price">$11.99/month</div>
+                <ul class="list">
+                    <li>✅ 10GB Storage</li>
+                    <li>✅ 1 User</li>
+                    <li>✅ Phone & Email Support</li>
+                </ul>
+                <button class="button">Sign Up</button>
+            </div>
+
+            <div class="price-plan">
+                <div class="price-title">Premium</div>
+                <div class="price">$49.99/month</div>
+                <ul class="list">
+                    <li>✅ 10GB Storage</li>
+                    <li>✅ 1 User</li>
+                    <li>✅ 24/7 Support</li>
+                </ul>
+                <button class="button">Sign Up</button>
+            </div>
+        </div>
+    </body>
+</html>
